@@ -8,8 +8,9 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { AntDesign, Ionicons } from "@expo/vector-icons";
-import { useLikeContext } from "../context/LikeContext";
-import { useTheme } from "../context/ThemeContext";
+import { useLikeContext } from "../Context/LikeContext";
+import { useTheme } from "../Context/ThemeContext";
+
 
 const MoviesScreen = () => {
   const { addLikedMovie, isMovieLiked } = useLikeContext();
@@ -96,7 +97,7 @@ const styles = StyleSheet.create({
   posterImage: {
     marginTop: 5,
     width: 200,
-    height: 25,
+    height: 250,
     resizeMode: "cover",
     borderRadius: 10,
   },
